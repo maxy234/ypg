@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Bono Region Youth Parliament</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logos/logo1.png" alt="Logo" onerror="this.src='https://via.placeholder.com/50x50?text=Logo'">
+            <h3>Bono Region Youth Parliament</h3>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="manage-news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="manage-projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="manage-leaders.html"><i class="fas fa-users"></i> Leaders</a></li>
+                <li><a href="manage-members.html"><i class="fas fa-user-plus"></i> Members</a></li>
+                <li><a href="manage-gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="manage-events.html"><i class="fas fa-calendar"></i> Events</a></li>
+                <li><a href="manage-contacts.html"><i class="fas fa-envelope"></i> Contacts</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="admin-header">
+            <div class="header-search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-user">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40x40" alt="Admin">
+                    <span>Admin User</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="content-area">
+            <h2 style="margin-bottom: 20px;">Dashboard</h2>
+            
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Total Members</h3>
+                        <div class="number">156</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Pending Applications</h3>
+                        <div class="number">23</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Active Projects</h3>
+                        <div class="number">12</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Upcoming Events</h3>
+                        <div class="number">8</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>News Articles</h3>
+                        <div class="number">45</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Unread Messages</h3>
+                        <div class="number">7</div>
+                    </div>
+                    <div class="stat-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Members -->
+            <div class="table-container">
+                <h3 style="margin-bottom: 20px;">Recent Member Applications</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>District</th>
+                            <th>Age</th>
+                            <th>Occupation</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kwame Asante</td>
+                            <td>Sunyani</td>
+                            <td>24</td>
+                            <td>Student</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>2025-02-15</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">View</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Akua Mensah</td>
+                            <td>Berekum</td>
+                            <td>28</td>
+                            <td>Teacher</td>
+                            <td><span class="status status-approved">Approved</span></td>
+                            <td>2025-02-14</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">View</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yaw Boateng</td>
+                            <td>Techiman</td>
+                            <td>22</td>
+                            <td>Trader</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>2025-02-13</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">View</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Esi Thompson</td>
+                            <td>Wenchi</td>
+                            <td>26</td>
+                            <td>Nurse</td>
+                            <td><span class="status status-rejected">Rejected</span></td>
+                            <td>2025-02-12</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">View</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Recent News -->
+            <div class="table-container">
+                <h3 style="margin-bottom: 20px;">Recent News</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Views</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Youth Parliament Inauguration Ceremony</td>
+                            <td>Event</td>
+                            <td>2025-02-15</td>
+                            <td>234</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Clean Bono Initiative Launch</td>
+                            <td>Project</td>
+                            <td>2025-02-10</td>
+                            <td>156</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ICT Training for Youth</td>
+                            <td>Training</td>
+                            <td>2025-02-05</td>
+                            <td>189</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add mobile menu functionality here
+        });
+    </script>
+</body>
+</html>

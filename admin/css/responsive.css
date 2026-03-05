@@ -1,0 +1,314 @@
+/* Responsive Design Styles */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (max-width: 1199px) {
+    .hero h2 {
+        font-size: 3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+    .header-main {
+        padding: 15px 30px;
+    }
+    
+    .logo-wrapper h1 {
+        font-size: 1rem;
+        max-width: 200px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .vision-mission {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    
+    .header-main {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-wrapper {
+        justify-content: center;
+    }
+    
+    .logo-wrapper h1 {
+        font-size: 0.9rem;
+        max-width: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .main-nav {
+        width: 100%;
+    }
+    
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    
+    .main-nav ul.show {
+        display: flex;
+    }
+    
+    .hero {
+        height: 500px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+    }
+    
+    section {
+        padding: 50px 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .vision-mission {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-grid,
+    .projects-grid,
+    .leaders-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Welcome page */
+    .welcome-card {
+        padding: 30px 20px;
+    }
+    
+    .welcome-card h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logos img {
+        height: 50px;
+    }
+    
+    .slogan {
+        font-size: 1.2rem;
+    }
+    
+    /* Admin panel */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-header {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .header-search input {
+        width: 200px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .leader-image {
+        height: 250px;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        margin: 5px;
+    }
+    
+    .contact-info {
+        padding: 20px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Calendar */
+    .calendar-day {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header-top,
+    .main-nav,
+    .hero,
+    .footer {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* High-resolution screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed */
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .gallery-item:hover img {
+        transform: none;
+    }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        height: 300px;
+    }
+    
+    .welcome-card {
+        padding: 20px;
+    }
+    
+    .welcome-image img {
+        height: 200px;
+    }
+}

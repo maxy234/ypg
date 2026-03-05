@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Team | Bono Region Youth Parliament Ghana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x600?text=Production+Team');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .team-section {
+            padding: 60px 50px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .member-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-info h3 {
+            color: var(--green);
+            margin-bottom: 5px;
+        }
+        
+        .member-role {
+            color: var(--red);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .member-social {
+            margin-top: 15px;
+        }
+        
+        .member-social a {
+            color: var(--green);
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .member-social a:hover {
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header -->
+   <!-- Replace your current header with this -->
+<header class="main-header">
+    <div class="header-top">
+        <div class="welcome-text">
+            <i class="fas fa-flag"></i>
+            <span>WELCOME TO BONO REGION YOUTH PARLIAMENT GHANA</span>
+        </div>
+        
+         <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    
+    <div class="header-main">
+        <div class="logo-wrapper">
+            <img src="images/logos/logo1.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo1'">
+            <img src="images/logos/logo2.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo2'">
+            <h1>BONO REGION YOUTH PARLIAMENT GHANA</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li><a href="main.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaders.html">Leadership</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="production-team.html">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero -->
+    <section class="team-hero">
+        <div class="hero-content">
+            <h1>Production Team</h1>
+            <p>The creative minds behind our content and events</p>
+        </div>
+    </section>
+
+    <!-- Team Introduction -->
+    <section class="team-section">
+        <div class="section-header">
+            <h2>Meet Our Production Team</h2>
+            <p>Dedicated to creating impactful content and managing events</p>
+        </div>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">The production team works behind the scenes to ensure all our events, media content, and communications are of the highest quality. From graphic design to video production, event management to social media, this team brings our vision to life.</p>
+    </section>
+
+    <!-- Team Members -->
+    <section class="team-section" style="background: var(--light-gray);">
+        <div class="team-grid">
+            <!-- Member 1 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Creative+Director" alt="Creative Director">
+                </div>
+                <div class="member-info">
+                    <h3>Akua Mensah</h3>
+                    <div class="member-role">Creative Director</div>
+                    <p>Oversees all creative output and brand identity</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member 2 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Video+Producer" alt="Video Producer">
+                </div>
+                <div class="member-info">
+                    <h3>Kwame Asare</h3>
+                    <div class="member-role">Video Producer</div>
+                    <p>Creates documentary and promotional videos</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member 3 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Graphic+Designer" alt="Graphic Designer">
+                </div>
+                <div class="member-info">
+                    <h3>Esi Thompson</h3>
+                    <div class="member-role">Graphic Designer</div>
+                    <p>Designs all visual materials and publications</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member 4 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Events+Coordinator" alt="Events Coordinator">
+                </div>
+                <div class="member-info">
+                    <h3>Yaw Boakye</h3>
+                    <div class="member-role">Events Coordinator</div>
+                    <p>Manages all events and logistics</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member 5 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Social+Media+Manager" alt="Social Media Manager">
+                </div>
+                <div class="member-info">
+                    <h3>Afia Serwaa</h3>
+                    <div class="member-role">Social Media Manager</div>
+                    <p>Manages online presence and engagement</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member 6 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/300x300?text=Content+Writer" alt="Content Writer">
+                </div>
+                <div class="member-info">
+                    <h3>Kofi Asante</h3>
+                    <div class="member-role">Content Writer</div>
+                    <p>Writes articles, speeches, and reports</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bono Region Youth Parliament</h3>
+                <p>Empowering youth for a better Bono Region. Join us in building a prosperous future.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="leaders.html">Leadership</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Sunyani, Bono Region, Ghana</p>
+                <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                <p><i class="fas fa-envelope"></i> info@bonoyouthparliament.gov.gh</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bono Region Youth Parliament Ghana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

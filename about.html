@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bono Region Youth Parliament Ghana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x600?text=Bono+Region');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .about-section {
+            padding: 60px 50px;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .value-item {
+            text-align: center;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: 10px;
+        }
+        
+        .value-item i {
+            font-size: 2.5rem;
+            color: var(--green);
+            margin-bottom: 15px;
+        }
+        
+        .objectives-list {
+            list-style: none;
+        }
+        
+        .objectives-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .objectives-list li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+   <!-- Replace your current header with this -->
+<header class="main-header">
+ <div class="header-top">
+        <div class="welcome-text">
+            <i class="fas fa-flag"></i>
+            <span>WELCOME TO BONO REGION YOUTH PARLIAMENT GHANA</span>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    
+    <div class="header-main">
+        <div class="logo-wrapper">
+            <img src="images/logos/logo1.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo1'">
+            <img src="images/logos/logo2.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo2'">
+            <h1>BONO REGION YOUTH PARLIAMENT GHANA</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li><a href="main.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaders.html">Leadership</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="production-team.html">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>About Bono Region Youth Parliament</h1>
+            <p>Empowering the next generation of leaders</p>
+        </div>
+    </section>
+
+    <!-- History of Bono Region -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>History of Bono Region</h2>
+                <p>The Bono Region was carved out of the then Brong-Ahafo Region in 2019 as part of Ghana's decentralization efforts. It is rich in culture, agriculture, and history, with Sunyani as its capital.</p>
+                <p>The region is known for its vibrant youth population, agricultural productivity (cocoa, cashew, maize), and growing industrial sector. The youth constitute over 60% of the population, making youth development crucial for regional progress.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/600x400?text=Bono+Region+Map" alt="Bono Region Map">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Youth Parliament -->
+    <section class="about-section" style="background: var(--light-gray);">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/600x400?text=Youth+Parliament" alt="Youth Parliament">
+            </div>
+            <div class="about-content">
+                <h2>About Bono Region Youth Parliament</h2>
+                <p>Established in 2020, the Bono Region Youth Parliament is a democratic platform that gives young people a voice in regional development. It operates as a shadow parliament, with elected youth representatives from all districts.</p>
+                <p>The parliament provides leadership training, advocates for youth-friendly policies, and implements community development projects. It works closely with the Regional Coordinating Council, National Youth Authority, and Parliament of Ghana.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="about-section">
+        <div class="section-header">
+            <h2>Our Vision & Mission</h2>
+        </div>
+        <div class="vision-mission" style="grid-template-columns: 1fr 1fr;">
+            <div class="card">
+                <i class="fas fa-eye"></i>
+                <h3>Vision</h3>
+                <p>A united and prosperous Bono Region led by empowered, skilled, and visionary youth who drive sustainable development and positive change.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Mission</h3>
+                <p>To mobilize, equip, and empower young people with leadership skills, entrepreneurial opportunities, and platforms to actively participate in regional development and governance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="about-section" style="background: var(--light-gray);">
+        <div class="section-header">
+            <h2>Our Core Values</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <i class="fas fa-handshake"></i>
+                <h4>Unity</h4>
+                <p>Working together across all districts</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Integrity</h4>
+                <p>Honesty and transparency in all we do</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Innovation</h4>
+                <p>Creative solutions to youth challenges</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-users"></i>
+                <h4>Inclusivity</h4>
+                <p>Every youth matters, regardless of background</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-heart"></i>
+                <h4>Service</h4>
+                <p>Putting community first</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-chart-line"></i>
+                <h4>Excellence</h4>
+                <p>Striving for the highest standards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives -->
+    <section class="about-section">
+        <div class="section-header">
+            <h2>Our Objectives</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <ul class="objectives-list">
+                <li><strong>Youth Unemployment:</strong> Create job opportunities through skills training, entrepreneurship support, and partnerships with industries.</li>
+                <li><strong>Education:</strong> Advocate for quality education, provide scholarships, and organize mentorship programs in schools.</li>
+                <li><strong>Entrepreneurship:</strong> Support young entrepreneurs with training, funding access, and business development services.</li>
+                <li><strong>Leadership Development:</strong> Train youth in leadership, governance, and civic participation.</li>
+                <li><strong>Community Building:</strong> Implement community development projects and promote social cohesion.</li>
+                <li><strong>Policy Advocacy:</strong> Influence youth-friendly policies at district and regional levels.</li>
+                <li><strong>Health & Wellbeing:</strong> Promote sexual reproductive health, mental health awareness, and sports.</li>
+                <li><strong>Environment:</strong> Engage youth in climate action and environmental conservation.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Same footer as main.html -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bono Region Youth Parliament</h3>
+                <p>Empowering youth for a better Bono Region. Join us in building a prosperous future.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="leaders.html">Leadership</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Sunyani, Bono Region, Ghana</p>
+                <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                <p><i class="fas fa-envelope"></i> info@bonoyouthparliament.gov.gh</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bono Region Youth Parliament Ghana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

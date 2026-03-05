@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Projects | Admin - Bono Region Youth Parliament</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logos/logo1.png" alt="Logo" onerror="this.src='https://via.placeholder.com/50x50?text=Logo'">
+            <h3>Bono Region Youth Parliament</h3>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="manage-news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="manage-projects.html" class="active"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="manage-leaders.html"><i class="fas fa-users"></i> Leaders</a></li>
+                <li><a href="manage-members.html"><i class="fas fa-user-plus"></i> Members</a></li>
+                <li><a href="manage-gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="manage-events.html"><i class="fas fa-calendar"></i> Events</a></li>
+                <li><a href="manage-contacts.html"><i class="fas fa-envelope"></i> Contacts</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="admin-header">
+            <div class="header-search">
+                <input type="text" placeholder="Search projects...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-user">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">5</span>
+                </div>
+                
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40x40" alt="Admin">
+                    <span>Admin User</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="content-area">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>Manage Projects</h2>
+                <button class="btn btn-primary" onclick="showAddProjectModal()">
+                    <i class="fas fa-plus"></i> Add New Project
+                </button>
+            </div>
+            
+            <!-- Projects Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Participants</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project" style="border-radius: 5px;"></td>
+                            <td>Community Clean-Up Exercise</td>
+                            <td>2025-01-20</td>
+                            <td><span class="status status-approved">Completed</span></td>
+                            <td>150</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" onclick="editProject(1)">Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteProject(1)">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project"></td>
+                            <td>ICT Skills Workshop</td>
+                            <td>2025-01-15</td>
+                            <td><span class="status status-approved">Completed</span></td>
+                            <td>80</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project"></td>
+                            <td>Entrepreneurship Support Program</td>
+                            <td>2025-01-10</td>
+                            <td><span class="status status-approved">Completed</span></td>
+                            <td>20</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project"></td>
+                            <td>Leadership Development Camp</td>
+                            <td>2024-12-05</td>
+                            <td><span class="status status-approved">Completed</span></td>
+                            <td>60</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project"></td>
+                            <td>Tree Planting Campaign</td>
+                            <td>2025-02-20</td>
+                            <td><span class="status status-pending">Ongoing</span></td>
+                            <td>200</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img src="https://via.placeholder.com/50x50" alt="Project"></td>
+                            <td>Youth Mentorship Program</td>
+                            <td>2025-02-25</td>
+                            <td><span class="status status-pending">Upcoming</span></td>
+                            <td>50</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Project Stats -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                    <h3 style="color: var(--primary); font-size: 2rem;">12</h3>
+                    <p>Total Projects</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                    <h3 style="color: var(--primary); font-size: 2rem;">8</h3>
+                    <p>Completed</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                    <h3 style="color: var(--primary); font-size: 2rem;">3</h3>
+                    <p>Ongoing</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                    <h3 style="color: var(--primary); font-size: 2rem;">1</h3>
+                    <p>Upcoming</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add/Edit Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content" style="max-width: 700px;">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add New Project</h3>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            
+            <form id="projectForm">
+                <div class="form-group">
+                    <label for="title">Project Title *</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Project Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="status">Status *</label>
+                        <select id="status" name="status" required>
+                            <option value="ongoing">Ongoing</option>
+                            <option value="completed">Completed</option>
+                            <option value="upcoming">Upcoming</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="short_description">Short Description *</label>
+                    <textarea id="short_description" name="short_description" rows="2" required placeholder="Brief summary (max 200 characters)"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Full Description *</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="participants">Number of Participants</label>
+                        <input type="number" id="participants" name="participants" min="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="districts">Districts Covered</label>
+                        <input type="text" id="districts" name="districts" placeholder="e.g., Sunyani, Berekum">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="impact">Impact/Results</label>
+                    <textarea id="impact" name="impact" rows="3" placeholder="What was achieved?"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Project Image</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <small style="color: var(--gray);">Recommended size: 800x600px</small>
+                </div>
+                
+                <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function showAddProjectModal() {
+            document.getElementById('modalTitle').textContent = 'Add New Project';
+            document.getElementById('projectForm').reset();
+            document.getElementById('projectModal').classList.add('active');
+        }
+        
+        function editProject(id) {
+            document.getElementById('modalTitle').textContent = 'Edit Project';
+            // In production, load project data from database
+            document.getElementById('projectModal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+        
+        function deleteProject(id) {
+            if (confirm('Are you sure you want to delete this project? This action cannot be undone.')) {
+                alert('Project deleted successfully');
+                // Implement delete functionality
+            }
+        }
+        
+        document.getElementById('projectForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Project saved successfully');
+            closeModal();
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('projectModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

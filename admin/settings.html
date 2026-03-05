@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Admin - Bono Region Youth Parliament</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <style>
+        .settings-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .settings-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .color-preview {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logos/logo1.png" alt="Logo">
+            <h3>Bono Region Youth Parliament</h3>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="manage-news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="manage-projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="manage-leaders.html"><i class="fas fa-users"></i> Leaders</a></li>
+                <li><a href="manage-members.html"><i class="fas fa-user-plus"></i> Members</a></li>
+                <li><a href="manage-gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="manage-events.html"><i class="fas fa-calendar"></i> Events</a></li>
+                <li><a href="manage-contacts.html"><i class="fas fa-envelope"></i> Contacts</a></li>
+                <li><a href="settings.html" class="active"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="admin-header">
+            <div class="header-search">
+                <input type="text" placeholder="Search settings...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-user">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40x40" alt="Admin">
+                    <span>Admin User</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="content-area">
+            <h2 style="margin-bottom: 20px;">Website Settings</h2>
+            
+            <!-- General Settings -->
+            <div class="settings-section">
+                <h3>General Settings</h3>
+                <div class="settings-grid">
+                    <div class="form-group">
+                        <label>Site Name</label>
+                        <input type="text" value="Bono Region Youth Parliament Ghana" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Site Tagline</label>
+                        <input type="text" value="Empowering Youth, Building Bono" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Site Email</label>
+                        <input type="email" value="info@bonoyouthparliament.gov.gh" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Site Phone</label>
+                        <input type="text" value="+233 XX XXX XXXX" class="form-control">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Address Information -->
+            <div class="settings-section">
+                <h3>Address Information</h3>
+                <div class="form-group">
+                    <label>Office Address</label>
+                    <textarea class="form-control" rows="3">Regional Coordinating Council, Sunyani, Bono Region, Ghana</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Google Maps Embed URL</label>
+                    <input type="url" value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.5863879014!2d-2.36549945!3d7.333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd9efc0b1a4b6b1%3A0x6c9b7e3c0c3b3c0!2sSunyani!5e0!3m2!1sen!2sgh!4v1620000000000!5m2!1sen!2sgh" class="form-control">
+                </div>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="settings-section">
+                <h3>Social Media Links</h3>
+                <div class="settings-grid">
+                    <div class="form-group">
+                        <label><i class="fab fa-facebook" style="color: #1877f2;"></i> Facebook</label>
+                        <input type="url" value="https://facebook.com/bonoyouthparliament" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fab fa-twitter" style="color: #1da1f2;"></i> Twitter</label>
+                        <input type="url" value="https://twitter.com/bonoyouth" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fab fa-instagram" style="color: #e4405f;"></i> Instagram</label>
+                        <input type="url" value="https://instagram.com/bonoyouthparliament" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fab fa-youtube" style="color: #ff0000;"></i> YouTube</label>
+                        <input type="url" value="https://youtube.com/bonoyouthparliament" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fab fa-linkedin" style="color: #0077b5;"></i> LinkedIn</label>
+                        <input type="url" value="https://linkedin.com/company/bonoyouthparliament" class="form-control">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Color Settings -->
+            <div class="settings-section">
+                <h3>Theme Colors</h3>
+                <div class="settings-grid">
+                    <div class="form-group">
+                        <label>Primary Color (Green) <span class="color-preview" style="background: #00843E;"></span></label>
+                        <input type="color" value="#00843E" class="form-control" style="height: 40px;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Secondary Color (Gold) <span class="color-preview" style="background: #FCD116;"></span></label>
+                        <input type="color" value="#FCD116" class="form-control" style="height: 40px;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Accent Color (Red) <span class="color-preview" style="background: #CE1126;"></span></label>
+                        <input type="color" value="#CE1126" class="form-control" style="height: 40px;">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Admin Users -->
+            <div class="settings-section">
+                <h3>Admin Users</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Last Login</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>admin</td>
+                            <td>admin@bonoyouthparliament.gov.gh</td>
+                            <td><span class="status status-approved">Super Admin</span></td>
+                            <td>2025-02-15 09:30 AM</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>editor1</td>
+                            <td>editor@bonoyouthparliament.gov.gh</td>
+                            <td><span class="status status-pending">Editor</span></td>
+                            <td>2025-02-14 02:15 PM</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <button class="btn btn-primary" style="margin-top: 20px;">
+                    <i class="fas fa-user-plus"></i> Add New Admin
+                </button>
+            </div>
+            
+            <!-- Maintenance Mode -->
+            <div class="settings-section">
+                <h3>Maintenance Mode</h3>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <label class="switch">
+                        <input type="checkbox" id="maintenanceMode">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Enable maintenance mode (only admins can access the site)</span>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <label>Maintenance Message</label>
+                    <textarea class="form-control" rows="3">Website under maintenance. We'll be back soon!</textarea>
+                </div>
+            </div>
+            
+            <!-- Save Button -->
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-primary" onclick="saveSettings()">Save Settings</button>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        
+        input:checked + .slider {
+            background-color: var(--primary);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #eee;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+    </style>
+    
+    <script>
+        function saveSettings() {
+            alert('Settings saved successfully!');
+        }
+    </script>
+</body>
+</html>

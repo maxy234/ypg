@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Bono Region Youth Parliament Ghana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .join-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x600?text=Join+Youth+Parliament');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .benefits-section {
+            padding: 60px 50px;
+            background: var(--light-gray);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .benefit-card i {
+            font-size: 3rem;
+            color: var(--green);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            color: var(--green);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header -->
+  <!-- Replace your current header with this -->
+<header class="main-header">
+    <div class="header-top">
+        <div class="welcome-text">
+            <i class="fas fa-flag"></i>
+            <span>WELCOME TO BONO REGION YOUTH PARLIAMENT GHANA</span>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    
+    <div class="header-main">
+        <div class="logo-wrapper">
+            <img src="images/logos/logo1.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo1'">
+            <img src="images/logos/logo2.png" alt="Logo" width="60" height="60" onerror="this.src='https://via.placeholder.com/60x60?text=Logo2'">
+            <h1>BONO REGION YOUTH PARLIAMENT GHANA</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li><a href="main.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaders.html">Leadership</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="production-team.html">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero -->
+    <section class="join-hero">
+        <div class="hero-content">
+            <h1>Join the Movement</h1>
+            <p>Be part of the change in Bono Region</p>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits-section">
+        <div class="section-header">
+            <h2>Why Join Us?</h2>
+            <p>Benefits of being a Youth Parliament member</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-gavel"></i>
+                <h3>Leadership Experience</h3>
+                <p>Gain practical leadership skills through parliamentary procedures and community engagement.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Networking</h3>
+                <p>Connect with youth leaders, government officials, and development partners across the region.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Skills Development</h3>
+                <p>Access training in public speaking, advocacy, project management, and entrepreneurship.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Community Impact</h3>
+                <p>Make a real difference through community projects and youth advocacy initiatives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Form -->
+    <section class="join-section" style="padding: 60px 50px;">
+        <div class="section-header">
+            <h2>Membership Application</h2>
+            <p>Fill the form below to become a member</p>
+        </div>
+        
+        <div class="join-form-container">
+            <form id="joinForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="district">District *</label>
+                        <select id="district" name="district" required>
+                            <option value="">Select District</option>
+                            <option value="Sunyani">Sunyani</option>
+                            <option value="Sunyani West">Sunyani West</option>
+                            <option value="Berekum">Berekum</option>
+                            <option value="Berekum West">Berekum West</option>
+                            <option value="Dormaa">Dormaa</option>
+                            <option value="Dormaa West">Dormaa West</option>
+                            <option value="Tain">Tain</option>
+                            <option value="Wenchi">Wenchi</option>
+                            <option value="Techiman">Techiman</option>
+                            <option value="Techiman North">Techiman North</option>
+                            <option value="Nkoranza">Nkoranza</option>
+                            <option value="Nkoranza North">Nkoranza North</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age" required min="15" max="35" placeholder="15-35 years">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="occupation">Occupation *</label>
+                        <input type="text" id="occupation" name="occupation" required placeholder="e.g., Student, Trader, etc.">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+233 XX XXX XXXX">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="reason">Why do you want to join? *</label>
+                    <textarea id="reason" name="reason" rows="5" required placeholder="Tell us about your motivation and what you hope to achieve..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="terms" required> I confirm that the information provided is accurate and I agree to abide by the Youth Parliament's constitution.
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bono Region Youth Parliament</h3>
+                <p>Empowering youth for a better Bono Region. Join us in building a prosperous future.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="leaders.html">Leadership</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Sunyani, Bono Region, Ghana</p>
+                <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                <p><i class="fas fa-envelope"></i> info@bonoyouthparliament.gov.gh</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bono Region Youth Parliament Ghana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
